@@ -1,5 +1,4 @@
 
-import React from 'react';
 import '../component/styles/styles.css'
 import ReactIcon from '../assets/pngwing.com 1 .svg'
 
