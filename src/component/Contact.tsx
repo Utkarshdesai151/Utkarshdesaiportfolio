@@ -1,10 +1,8 @@
-import React, { useState } from "react";
-
+import { useState } from "react";
 function Contact() {
     const [submitted, setSubmitted] = useState(false);
 
     const handleSubmit = () => {
-        // Show popup after short delay to ensure Formspree receives data
         setTimeout(() => setSubmitted(true), 500);
     };
 
@@ -19,7 +17,6 @@ function Contact() {
     <div className="fixed inset-0 backdrop-blur-md bg-black/60 flex justify-center items-center z-50 animate-fadeIn">
         <div className="relative bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-xl border border-white/30 shadow-2xl text-white p-10 rounded-3xl w-[90%] max-w-md text-center animate-scaleIn">
 
-            {/* Success Icon */}
             <div className="flex justify-center mb-4">
                 <div className="w-20 h-20 rounded-full bg-green-500/20 border border-green-500 flex items-center justify-center">
                     <span className="text-4xl">✔️</span>
